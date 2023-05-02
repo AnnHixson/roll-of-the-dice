@@ -36,7 +36,7 @@ function rollingDice(event) {
         diceResults.push(diceValue);
     }
 
-    // console.log(diceResults);
+    console.log(diceResults);
 
     // Add up the dice rolls
     for (let i = 0; i < diceResults.length; i++) {
@@ -45,7 +45,7 @@ function rollingDice(event) {
         // Prepare the individual dice values display
         if (i < diceResults.length - 1) {
             diceArray += (diceResults[i] + ' + ')
-        } else if (i = diceResults.length - 1) {
+        } else if (i === diceResults.length - 1) {
             diceArray += (diceResults[i] + ' ');
         }
     }
@@ -53,7 +53,13 @@ function rollingDice(event) {
     // console.log(diceArray);
     // console.log(diceTotal);
 
-    resultDisplay.textContent = diceArray + ' = ' + diceTotal
+    // console.log(diceQuantity.value);
+    if (diceQuantity.value == 1) {
+        resultDisplay.textContent = diceTotal;
+    } else if (diceQuantity.value > 1) {
+        resultDisplay.textContent = diceArray + ' = ' + diceTotal;
+    }
+    
 };
 
 // Event Listeners
