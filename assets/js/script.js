@@ -6,6 +6,9 @@ const addDice = document.getElementById("add-dice");
 const addModifier = document.getElementById("add-modifier");
 const rollDice = document.getElementById("roll");
 const resultDisplay = document.getElementById("results");
+const nextRoll = document.getElementById("next-roll");
+const reRoll = document.getElementById("re-roll");
+const newRoll = document.getElementById("new-roll");
 
 // Additional Form Elements
 const additionalDice1 = document.getElementById("additional-dice1");
@@ -39,15 +42,45 @@ const additionalDice10 = document.getElementById("additional-dice10");
 const diceQuantity11 = document.getElementById("quantity11");
 const diceSides11 = document.getElementById("sides11");
 const modifier1 = document.getElementById("additional-modifier1");
+const modP1 = document.getElementById("modifier1+");
+const modM1 = document.getElementById("modifier1-");
+const mod1 = document.getElementById("modifier1");
 const modifier2 = document.getElementById("additional-modifier2");
+const modP2 = document.getElementById("modifier2+");
+const modM2 = document.getElementById("modifier2-");
+const mod2 = document.getElementById("modifier2");
 const modifier3 = document.getElementById("additional-modifier3");
+const modP3 = document.getElementById("modifier3+");
+const modM3 = document.getElementById("modifier3-");
+const mod3 = document.getElementById("modifier3");
 const modifier4 = document.getElementById("additional-modifier4");
+const modP4 = document.getElementById("modifier4+");
+const modM4 = document.getElementById("modifier4-");
+const mod4 = document.getElementById("modifier4");
 const modifier5 = document.getElementById("additional-modifier5");
+const modP5 = document.getElementById("modifier5+");
+const modM5 = document.getElementById("modifier5-");
+const mod5 = document.getElementById("modifier5");
 const modifier6 = document.getElementById("additional-modifier6");
+const modP6 = document.getElementById("modifier6+");
+const modM6 = document.getElementById("modifier6-");
+const mod6 = document.getElementById("modifier6");
 const modifier7 = document.getElementById("additional-modifier7");
+const modP7 = document.getElementById("modifier7+");
+const modM7 = document.getElementById("modifier7-");
+const mod7 = document.getElementById("modifier7");
 const modifier8 = document.getElementById("additional-modifier8");
+const modP8 = document.getElementById("modifier8+");
+const modM8 = document.getElementById("modifier8-");
+const mod8 = document.getElementById("modifier8");
 const modifier9 = document.getElementById("additional-modifier9");
+const modP9 = document.getElementById("modifier9+");
+const modM9 = document.getElementById("modifier9-");
+const mod9 = document.getElementById("modifier9");
 const modifier10 = document.getElementById("additional-modifier10");
+const modP10 = document.getElementById("modifier10+");
+const modM10 = document.getElementById("modifier10-");
+const mod10 = document.getElementById("modifier10");
 
 // Initial Display
 additionalDice1.style.display = "none";
@@ -70,6 +103,7 @@ modifier7.style.display = "none";
 modifier8.style.display = "none";
 modifier9.style.display = "none";
 modifier10.style.display = "none";
+nextRoll.style.display = "none";
 
 
 // This is what happens when you click on 'Add Another Dice Type'
@@ -157,21 +191,26 @@ function rollingDice(event) {
     console.log(diceQuantity.value + 'd' + diceSides.value);
 
     // TESTING
-    console.log(diceQuantity2.value + 'd' + diceSides2.value);
-    console.log(diceQuantity3.value + 'd' + diceSides3.value);
-    console.log(diceQuantity4.value + 'd' + diceSides4.value);
-    console.log(diceQuantity5.value + 'd' + diceSides5.value);
-    console.log(diceQuantity6.value + 'd' + diceSides6.value);
-    console.log(diceQuantity7.value + 'd' + diceSides7.value);
-    console.log(diceQuantity8.value + 'd' + diceSides8.value);
-    console.log(diceQuantity9.value + 'd' + diceSides9.value);
-    console.log(diceQuantity10.value + 'd' + diceSides10.value);
-    console.log(diceQuantity11.value + 'd' + diceSides11.value);
+    // console.log(diceQuantity2.value + 'd' + diceSides2.value);
+    // console.log(diceQuantity3.value + 'd' + diceSides3.value);
+    // console.log(diceQuantity4.value + 'd' + diceSides4.value);
+    // console.log(diceQuantity5.value + 'd' + diceSides5.value);
+    // console.log(diceQuantity6.value + 'd' + diceSides6.value);
+    // console.log(diceQuantity7.value + 'd' + diceSides7.value);
+    // console.log(diceQuantity8.value + 'd' + diceSides8.value);
+    // console.log(diceQuantity9.value + 'd' + diceSides9.value);
+    // console.log(diceQuantity10.value + 'd' + diceSides10.value);
+    // console.log(diceQuantity11.value + 'd' + diceSides11.value);
+    // console.log("modifier 1");
+    // console.log(modP1.checked);
+    // console.log(modM1.checked);
+    // console.log(mod1.value);
 
     let numberOfDice = diceQuantity.value;
     let diceTotal = 0;
     let diceResults = [];
-    let diceArray = ['']
+    let diceArray = [''];
+    let withMods = 0;
 
     // Generate a random number (between 1 and the number of sides of the dice) for each dice rolled
     for (numberOfDice; numberOfDice > 0; numberOfDice--) {
@@ -193,6 +232,123 @@ function rollingDice(event) {
         }
     }
 
+    // console.log(diceTotal);
+
+    // Add any modifiers
+    if (modifier1.style.display === 'block') {
+        if (modP1.checked) {
+            console.log('+ ' + mod1.value);
+            withMods = diceTotal + Number(mod1.value);
+            // console.log (withMods);
+        } else if (modM1.checked) {
+            console.log('- ' + mod1.value);
+            withMods = diceTotal - mod1.value;
+            // console.log (withMods);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    } else {
+        console.log('No modifiers...');
+    }
+
+    // console.log (withMods);
+
+    if (modifier2.style.display === 'block') {
+        if (modP2.checked) {
+            console.log('+ ' + mod2.value);
+            withMods += Number(mod2.value);
+            // console.log (withMods);
+        } else if (modM2.checked) {
+            console.log('- ' + mod2.value);
+            withMods -= mod2.value;
+            // console.log (withMods);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    }
+
+    if (modifier3.style.display === 'block') {
+        if (modP3.checked) {
+            console.log('+ ' + mod3.value);
+        } else if (modM3.checked) {
+            console.log('- ' + mod3.value);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    }
+
+    if (modifier4.style.display === 'block') {
+        if (modP4.checked) {
+            console.log('+ ' + mod4.value);
+        } else if (modM4.checked) {
+            console.log('- ' + mod4.value);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    }
+
+    if (modifier5.style.display === 'block') {
+        if (modP5.checked) {
+            console.log('+ ' + mod5.value);
+        } else if (modM5.checked) {
+            console.log('- ' + mod5.value);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    }
+
+    if (modifier6.style.display === 'block') {
+        if (modP6.checked) {
+            console.log('+ ' + mod6.value);
+        } else if (modM6.checked) {
+            console.log('- ' + mod6.value);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    }
+
+    if (modifier7.style.display === 'block') {
+        if (modP7.checked) {
+            console.log('+ ' + mod7.value);
+        } else if (modM7.checked) {
+            console.log('- ' + mod7.value);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    }
+
+    if (modifier8.style.display === 'block') {
+        if (modP8.checked) {
+            console.log('+ ' + mod8.value);
+        } else if (modM8.checked) {
+            console.log('- ' + mod8.value);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    }
+
+    if (modifier9.style.display === 'block') {
+        if (modP9.checked) {
+            console.log('+ ' + mod9.value);
+        } else if (modM9.checked) {
+            console.log('- ' + mod9.value);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    }
+
+    if (modifier10.style.display === 'block') {
+        if (modP10.checked) {
+            console.log('+ ' + mod10.value);
+        } else if (modM10.checked) {
+            console.log('- ' + mod10.value);
+        } else {
+            console.log('You must select either "+" or "-" for modifiers.');
+        }
+    }
+
+    console.log (withMods);
+
     // console.log(diceArray);
     // console.log(diceTotal);
 
@@ -203,9 +359,53 @@ function rollingDice(event) {
         resultDisplay.textContent = diceArray + ' = ' + diceTotal;
     }
     
+    nextRoll.style.display = "block";
+    rollDice.style.display = "none";
+};
+
+// Re-Roll the same dice
+function reRollingDice(event) {
+    event.preventDefault();
+
+    rollingDice(event);
+};
+
+// Reset the dice
+function clearDice(event) {
+    event.preventDefault();
+
+    // Reset Display
+    rollDice.style.display = "block";
+    nextRoll.style.display = "none";
+    additionalDice1.style.display = "none";
+    additionalDice2.style.display = "none";
+    additionalDice3.style.display = "none";
+    additionalDice4.style.display = "none";
+    additionalDice5.style.display = "none";
+    additionalDice6.style.display = "none";
+    additionalDice7.style.display = "none";
+    additionalDice8.style.display = "none";
+    additionalDice9.style.display = "none";
+    additionalDice10.style.display = "none";
+    modifier1.style.display = "none";
+    modifier2.style.display = "none";
+    modifier3.style.display = "none";
+    modifier4.style.display = "none";
+    modifier5.style.display = "none";
+    modifier6.style.display = "none";
+    modifier7.style.display = "none";
+    modifier8.style.display = "none";
+    modifier9.style.display = "none";
+    modifier10.style.display = "none";
+    nextRoll.style.display = "none";
+
+    // Reset Values
+    modP1.checked = false;
 };
 
 // Event Listeners
 addDice.addEventListener('click', addingDice);
 addModifier.addEventListener('click', addingModifier);
 rollDice.addEventListener('click', rollingDice);
+reRoll.addEventListener('click', reRollingDice);
+newRoll.addEventListener('click', clearDice);
