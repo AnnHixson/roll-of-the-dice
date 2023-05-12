@@ -201,10 +201,6 @@ function rollingDice(event) {
     // console.log(diceQuantity9.value + 'd' + diceSides9.value);
     // console.log(diceQuantity10.value + 'd' + diceSides10.value);
     // console.log(diceQuantity11.value + 'd' + diceSides11.value);
-    // console.log("modifier 1");
-    // console.log(modP1.checked);
-    // console.log(modM1.checked);
-    // console.log(mod1.value);
 
     let numberOfDice = diceQuantity.value;
     let diceTotal = 0;
@@ -232,116 +228,177 @@ function rollingDice(event) {
         }
     }
 
-    // console.log(diceTotal);
+    // Additional dice types:
+    let numberOfDice2 = diceQuantity2.value;
+    let diceTotal2 = 0;
+    let diceResults2 = [];
+    let diceArray2 = [''];
+    let numberOfDice3 = diceQuantity3.value;
+    let diceTotal3 = 0;
+    let diceResults3 = [];
+    let diceArray3 = [''];
+    let numberOfDice4 = diceQuantity4.value;
+    let diceTotal4 = 0;
+    let diceResults4 = [];
+    let diceArray4 = [''];
+    let numberOfDice5 = diceQuantity5.value;
+    let diceTotal5 = 0;
+    let diceResults5 = [];
+    let diceArray5 = [''];
+    let numberOfDice6 = diceQuantity6.value;
+    let diceTotal6 = 0;
+    let diceResults6 = [];
+    let diceArray6 = [''];
+    let numberOfDice7 = diceQuantity7.value;
+    let diceTotal7 = 0;
+    let diceResults7 = [];
+    let diceArray7 = [''];
+    let numberOfDice8 = diceQuantity8.value;
+    let diceTotal8 = 0;
+    let diceResults8 = [];
+    let diceArray8 = [''];
+    let numberOfDice9 = diceQuantity9.value;
+    let diceTotal9 = 0;
+    let diceResults9 = [];
+    let diceArray9 = [''];
+    let numberOfDice10 = diceQuantity10.value;
+    let diceTotal10 = 0;
+    let diceResults10 = [];
+    let diceArray10 = [''];
+    let numberOfDice11 = diceQuantity11.value;
+    let diceTotal11 = 0;
+    let diceResults11 = [];
+    let diceArray11 = [''];
+
+    console.log(diceQuantity2.value + 'd' + diceSides2.value);
+
+    for (numberOfDice2; numberOfDice2 > 0; numberOfDice2--) {
+        let diceValue2 = Math.floor((Math.random() * diceSides2.value) + 1);
+        diceResults2.push(diceValue2);
+    }
+
+    console.log(diceResults2);
+
+    for (let i = 0; i < diceResults2.length; i++) {
+        // Add up the value of the dice rolls
+        diceTotal2 += diceResults2[i];
+        // Prepare the individual dice values display
+        if (i < diceResults2.length - 1) {
+            diceArray2 += (diceResults2[i] + ' + ')
+        } else if (i === diceResults2.length - 1) {
+            diceArray2 += (diceResults2[i] + ' ');
+        }
+    }
 
     // Add any modifiers
     if (modifier1.style.display === 'block') {
         if (modP1.checked) {
             console.log('+ ' + mod1.value);
             withMods = diceTotal + Number(mod1.value);
-            // console.log (withMods);
         } else if (modM1.checked) {
             console.log('- ' + mod1.value);
             withMods = diceTotal - mod1.value;
-            // console.log (withMods);
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     } else {
         console.log('No modifiers...');
     }
-
-    // console.log (withMods);
-
     if (modifier2.style.display === 'block') {
         if (modP2.checked) {
             console.log('+ ' + mod2.value);
             withMods += Number(mod2.value);
-            // console.log (withMods);
         } else if (modM2.checked) {
             console.log('- ' + mod2.value);
             withMods -= mod2.value;
-            // console.log (withMods);
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     }
-
     if (modifier3.style.display === 'block') {
         if (modP3.checked) {
             console.log('+ ' + mod3.value);
+            withMods += Number(mod3.value);
         } else if (modM3.checked) {
             console.log('- ' + mod3.value);
+            withMods -= mod3.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     }
-
     if (modifier4.style.display === 'block') {
         if (modP4.checked) {
             console.log('+ ' + mod4.value);
+            withMods += Number(mod4.value);
         } else if (modM4.checked) {
             console.log('- ' + mod4.value);
+            withMods -= mod4.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     }
-
     if (modifier5.style.display === 'block') {
         if (modP5.checked) {
             console.log('+ ' + mod5.value);
+            withMods += Number(mod5.value);
         } else if (modM5.checked) {
             console.log('- ' + mod5.value);
+            withMods -= mod5.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     }
-
     if (modifier6.style.display === 'block') {
         if (modP6.checked) {
             console.log('+ ' + mod6.value);
+            withMods += Number(mod6.value);
         } else if (modM6.checked) {
             console.log('- ' + mod6.value);
+            withMods -= mod6.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     }
-
     if (modifier7.style.display === 'block') {
         if (modP7.checked) {
             console.log('+ ' + mod7.value);
+            withMods += Number(mod7.value);
         } else if (modM7.checked) {
             console.log('- ' + mod7.value);
+            withMods -= mod7.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     }
-
     if (modifier8.style.display === 'block') {
         if (modP8.checked) {
             console.log('+ ' + mod8.value);
+            withMods += Number(mod8.value);
         } else if (modM8.checked) {
             console.log('- ' + mod8.value);
+            withMods -= mod8.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     }
-
     if (modifier9.style.display === 'block') {
         if (modP9.checked) {
             console.log('+ ' + mod9.value);
+            withMods += Number(mod9.value);
         } else if (modM9.checked) {
             console.log('- ' + mod9.value);
+            withMods -= mod9.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     }
-
     if (modifier10.style.display === 'block') {
         if (modP10.checked) {
             console.log('+ ' + mod10.value);
+            withMods += Number(mod10.value);
         } else if (modM10.checked) {
             console.log('- ' + mod10.value);
+            withMods -= mod10.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
@@ -349,8 +406,10 @@ function rollingDice(event) {
 
     console.log (withMods);
 
-    // console.log(diceArray);
-    // console.log(diceTotal);
+    console.log(diceArray);
+    console.log(diceTotal);
+    console.log(diceArray2);
+    console.log(diceTotal2);
 
     // console.log(diceQuantity.value);
     if (diceQuantity.value == 1) {
@@ -398,9 +457,61 @@ function clearDice(event) {
     modifier9.style.display = "none";
     modifier10.style.display = "none";
     nextRoll.style.display = "none";
+    resultDisplay.textContent = null;
 
     // Reset Values
     modP1.checked = false;
+    modM1.checked = false;
+    mod1.value = null;
+    modP2.checked = false;
+    modM2.checked = false;
+    mod2.value = null;
+    modP3.checked = false;
+    modM3.checked = false;
+    mod3.value = null;
+    modP4.checked = false;
+    modM4.checked = false;
+    mod4.value = null;
+    modP5.checked = false;
+    modM5.checked = false;
+    mod5.value = null;
+    modP6.checked = false;
+    modM6.checked = false;
+    mod6.value = null;
+    modP7.checked = false;
+    modM7.checked = false;
+    mod7.value = null;
+    modP8.checked = false;
+    modM8.checked = false;
+    mod8.value = null;
+    modP9.checked = false;
+    modM9.checked = false;
+    mod9.value = null;
+    modP10.checked = false;
+    modM10.checked = false;
+    mod10.value = null;
+    diceQuantity.value = null;
+    diceSides.value = null;
+    diceQuantity2.value = null;
+    diceSides2.value = null;
+    diceQuantity3.value = null;
+    diceSides3.value = null;
+    diceQuantity4.value = null;
+    diceSides4.value = null;
+    diceQuantity5.value = null;
+    diceSides5.value = null;
+    diceQuantity6.value = null;
+    diceSides6.value = null;
+    diceQuantity7.value = null;
+    diceSides7.value = null;
+    diceQuantity8.value = null;
+    diceSides8.value = null;
+    diceQuantity9.value = null;
+    diceSides9.value = null;
+    diceQuantity10.value = null;
+    diceSides10.value = null;
+    diceQuantity11.value = null;
+    diceSides11.value = null;
 };
 
 // Event Listeners
