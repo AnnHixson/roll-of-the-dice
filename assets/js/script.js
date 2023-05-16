@@ -112,34 +112,34 @@ function addingDice(event) {
     
     if (additionalDice1.style.display === "none") {
         additionalDice1.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else if (additionalDice1.style.display === "block" && additionalDice2.style.display === "none") {
         additionalDice2.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else if (additionalDice1.style.display === "block" && additionalDice2.style.display === "block" && additionalDice3.style.display === "none") {
         additionalDice3.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else if (additionalDice1.style.display === "block" && additionalDice2.style.display === "block" && additionalDice3.style.display === "block" && additionalDice4.style.display === "none") {
         additionalDice4.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else if (additionalDice1.style.display === "block" && additionalDice2.style.display === "block" && additionalDice3.style.display === "block" && additionalDice4.style.display === "block" && additionalDice5.style.display === "none") {
         additionalDice5.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else if (additionalDice1.style.display === "block" && additionalDice2.style.display === "block" && additionalDice3.style.display === "block" && additionalDice4.style.display === "block" && additionalDice5.style.display === "block" && additionalDice6.style.display === "none") {
         additionalDice6.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else if (additionalDice1.style.display === "block" && additionalDice2.style.display === "block" && additionalDice3.style.display === "block" && additionalDice4.style.display === "block" && additionalDice5.style.display === "block" && additionalDice6.style.display === "block" && additionalDice7.style.display === "none") {
         additionalDice7.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else if (additionalDice1.style.display === "block" && additionalDice2.style.display === "block" && additionalDice3.style.display === "block" && additionalDice4.style.display === "block" && additionalDice5.style.display === "block" && additionalDice6.style.display === "block" && additionalDice7.style.display === "block" && additionalDice8.style.display === "none") {
         additionalDice8.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else if (additionalDice1.style.display === "block" && additionalDice2.style.display === "block" && additionalDice3.style.display === "block" && additionalDice4.style.display === "block" && additionalDice5.style.display === "block" && additionalDice6.style.display === "block" && additionalDice7.style.display === "block" && additionalDice8.style.display === "block" && additionalDice9.style.display === "none") {
         additionalDice9.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else if (additionalDice1.style.display === "block" && additionalDice2.style.display === "block" && additionalDice3.style.display === "block" && additionalDice4.style.display === "block" && additionalDice5.style.display === "block" && additionalDice6.style.display === "block" && additionalDice7.style.display === "block" && additionalDice8.style.display === "block" && additionalDice9.style.display === "block" && additionalDice10.style.display === "none") {
         additionalDice10.style.display = "block";
-        console.log('Adding dice...');
+        // console.log('Adding dice...');
     } else {
         console.log('You cannot add any more dice types to this roll.')
     }
@@ -151,34 +151,34 @@ function addingModifier(event) {
 
     if (modifier1.style.display === "none") {
         modifier1.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else if (modifier1.style.display === "block" && modifier2.style.display === "none") {
         modifier2.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else if (modifier1.style.display === "block" && modifier2.style.display === "block" && modifier3.style.display === "none") {
         modifier3.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else if (modifier1.style.display === "block" && modifier2.style.display === "block" && modifier3.style.display === "block" && modifier4.style.display === "none") {
         modifier4.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else if (modifier1.style.display === "block" && modifier2.style.display === "block" && modifier3.style.display === "block" && modifier4.style.display === "block" && modifier5.style.display === "none") {
         modifier5.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else if (modifier1.style.display === "block" && modifier2.style.display === "block" && modifier3.style.display === "block" && modifier4.style.display === "block" && modifier5.style.display === "block" && modifier6.style.display === "none") {
         modifier6.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else if (modifier1.style.display === "block" && modifier2.style.display === "block" && modifier3.style.display === "block" && modifier4.style.display === "block" && modifier5.style.display === "block" && modifier6.style.display === "block" && modifier7.style.display === "none") {
         modifier7.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else if (modifier1.style.display === "block" && modifier2.style.display === "block" && modifier3.style.display === "block" && modifier4.style.display === "block" && modifier5.style.display === "block" && modifier6.style.display === "block" && modifier7.style.display === "block" &&  modifier8.style.display === "none") {
         modifier8.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else if (modifier1.style.display === "block" && modifier2.style.display === "block" && modifier3.style.display === "block" && modifier4.style.display === "block" && modifier5.style.display === "block" && modifier6.style.display === "block" && modifier7.style.display === "block" &&  modifier8.style.display === "block" && modifier9.style.display === "none") {
         modifier9.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else if (modifier1.style.display === "block" && modifier2.style.display === "block" && modifier3.style.display === "block" && modifier4.style.display === "block" && modifier5.style.display === "block" && modifier6.style.display === "block" && modifier7.style.display === "block" &&  modifier8.style.display === "block" && modifier9.style.display === "block" && modifier10.style.display === "none") {
         modifier10.style.display = "block";
-        console.log('Adding modifier...');
+        // console.log('Adding modifier...');
     } else {
         console.log('You cannot add any more modifiers to this roll.')
     }
@@ -188,47 +188,11 @@ function addingModifier(event) {
 function rollingDice(event) {
     event.preventDefault();
     console.log('Rolling dice...');
-    console.log(diceQuantity.value + 'd' + diceSides.value);
-
-    // TESTING
-    // console.log(diceQuantity2.value + 'd' + diceSides2.value);
-    // console.log(diceQuantity3.value + 'd' + diceSides3.value);
-    // console.log(diceQuantity4.value + 'd' + diceSides4.value);
-    // console.log(diceQuantity5.value + 'd' + diceSides5.value);
-    // console.log(diceQuantity6.value + 'd' + diceSides6.value);
-    // console.log(diceQuantity7.value + 'd' + diceSides7.value);
-    // console.log(diceQuantity8.value + 'd' + diceSides8.value);
-    // console.log(diceQuantity9.value + 'd' + diceSides9.value);
-    // console.log(diceQuantity10.value + 'd' + diceSides10.value);
-    // console.log(diceQuantity11.value + 'd' + diceSides11.value);
 
     let numberOfDice = diceQuantity.value;
     let diceTotal = 0;
     let diceResults = [];
     let diceArray = [''];
-    let withMods = 0;
-
-    // Generate a random number (between 1 and the number of sides of the dice) for each dice rolled
-    for (numberOfDice; numberOfDice > 0; numberOfDice--) {
-        let diceValue = Math.floor((Math.random() * diceSides.value) + 1);
-        diceResults.push(diceValue);
-    }
-
-    console.log(diceResults);
-
-    // Add up the dice rolls
-    for (let i = 0; i < diceResults.length; i++) {
-        // Add up the value of the dice rolls
-        diceTotal += diceResults[i];
-        // Prepare the individual dice values display
-        if (i < diceResults.length - 1) {
-            diceArray += (diceResults[i] + ' + ')
-        } else if (i === diceResults.length - 1) {
-            diceArray += (diceResults[i] + ' ');
-        }
-    }
-
-    // Additional dice types:
     let numberOfDice2 = diceQuantity2.value;
     let diceTotal2 = 0;
     let diceResults2 = [];
@@ -269,48 +233,288 @@ function rollingDice(event) {
     let diceTotal11 = 0;
     let diceResults11 = [];
     let diceArray11 = [''];
+    let modTotal = 0;
+    let modifiersPresent = true;
 
-    console.log(diceQuantity2.value + 'd' + diceSides2.value);
+    console.log(diceQuantity.value + 'd' + diceSides.value);
 
-    for (numberOfDice2; numberOfDice2 > 0; numberOfDice2--) {
-        let diceValue2 = Math.floor((Math.random() * diceSides2.value) + 1);
-        diceResults2.push(diceValue2);
+    // Generate a random number (between 1 and the number of sides of the dice) for each dice rolled
+    for (numberOfDice; numberOfDice > 0; numberOfDice--) {
+        let diceValue = Math.floor((Math.random() * diceSides.value) + 1);
+        diceResults.push(diceValue);
     }
 
-    console.log(diceResults2);
+    console.log(diceResults);
 
-    for (let i = 0; i < diceResults2.length; i++) {
+    // Add up the dice rolls
+    for (let i = 0; i < diceResults.length; i++) {
         // Add up the value of the dice rolls
-        diceTotal2 += diceResults2[i];
+        diceTotal += diceResults[i];
         // Prepare the individual dice values display
-        if (i < diceResults2.length - 1) {
-            diceArray2 += (diceResults2[i] + ' + ')
-        } else if (i === diceResults2.length - 1) {
-            diceArray2 += (diceResults2[i] + ' ');
+        if (i < diceResults.length - 1) {
+            diceArray += (diceResults[i] + ' + ')
+        } else if (i === diceResults.length - 1) {
+            diceArray += (diceResults[i] + ' ');
         }
     }
+
+    console.log(diceArray);
+    console.log(diceTotal);
+
+    // Additional dice types:
+    if (additionalDice1.style.display === 'block') {
+        console.log(diceQuantity2.value + 'd' + diceSides2.value);
+
+        for (numberOfDice2; numberOfDice2 > 0; numberOfDice2--) {
+            let diceValue2 = Math.floor((Math.random() * diceSides2.value) + 1);
+            diceResults2.push(diceValue2);
+        }
+
+        console.log(diceResults2);
+
+        for (let i = 0; i < diceResults2.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal2 += diceResults2[i];
+            // Prepare the individual dice values display
+            if (i < diceResults2.length - 1) {
+                diceArray2 += (diceResults2[i] + ' + ')
+            } else if (i === diceResults2.length - 1) {
+                diceArray2 += (diceResults2[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray2);
+    console.log(diceTotal2);
+    if (additionalDice2.style.display === 'block') {
+        console.log(diceQuantity3.value + 'd' + diceSides3.value);
+
+        for (numberOfDice3; numberOfDice3 > 0; numberOfDice3--) {
+            let diceValue3 = Math.floor((Math.random() * diceSides3.value) + 1);
+            diceResults3.push(diceValue3);
+        }
+
+        console.log(diceResults3);
+
+        for (let i = 0; i < diceResults3.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal3 += diceResults3[i];
+            // Prepare the individual dice values display
+            if (i < diceResults3.length - 1) {
+                diceArray3 += (diceResults3[i] + ' + ')
+            } else if (i === diceResults3.length - 1) {
+                diceArray3 += (diceResults3[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray3);
+    console.log(diceTotal3);
+    if (additionalDice3.style.display === 'block') {
+        console.log(diceQuantity4.value + 'd' + diceSides4.value);
+
+        for (numberOfDice4; numberOfDice4 > 0; numberOfDice4--) {
+            let diceValue4 = Math.floor((Math.random() * diceSides4.value) + 1);
+            diceResults4.push(diceValue4);
+        }
+
+        console.log(diceResults4);
+
+        for (let i = 0; i < diceResults4.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal4 += diceResults4[i];
+            // Prepare the individual dice values display
+            if (i < diceResults4.length - 1) {
+                diceArray4 += (diceResults4[i] + ' + ')
+            } else if (i === diceResults4.length - 1) {
+                diceArray4 += (diceResults4[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray4);
+    console.log(diceTotal4);
+    if (additionalDice4.style.display === 'block') {
+        console.log(diceQuantity5.value + 'd' + diceSides5.value);
+
+        for (numberOfDice5; numberOfDice5 > 0; numberOfDice5--) {
+            let diceValue5 = Math.floor((Math.random() * diceSides5.value) + 1);
+            diceResults5.push(diceValue5);
+        }
+
+        console.log(diceResults5);
+
+        for (let i = 0; i < diceResults5.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal5 += diceResults5[i];
+            // Prepare the individual dice values display
+            if (i < diceResults5.length - 1) {
+                diceArray5 += (diceResults5[i] + ' + ')
+            } else if (i === diceResults5.length - 1) {
+                diceArray5 += (diceResults5[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray5);
+    console.log(diceTotal5);
+    if (additionalDice5.style.display === 'block') {
+        console.log(diceQuantity6.value + 'd' + diceSides6.value);
+
+        for (numberOfDice6; numberOfDice6 > 0; numberOfDice6--) {
+            let diceValue6 = Math.floor((Math.random() * diceSides6.value) + 1);
+            diceResults6.push(diceValue6);
+        }
+
+        console.log(diceResults6);
+
+        for (let i = 0; i < diceResults6.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal6 += diceResults6[i];
+            // Prepare the individual dice values display
+            if (i < diceResults6.length - 1) {
+                diceArray6 += (diceResults6[i] + ' + ')
+            } else if (i === diceResults6.length - 1) {
+                diceArray6 += (diceResults6[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray6);
+    console.log(diceTotal6);
+    if (additionalDice6.style.display === 'block') {
+        console.log(diceQuantity7.value + 'd' + diceSides7.value);
+
+        for (numberOfDice7; numberOfDice7 > 0; numberOfDice7--) {
+            let diceValue7 = Math.floor((Math.random() * diceSides7.value) + 1);
+            diceResults7.push(diceValue7);
+        }
+
+        console.log(diceResults7);
+
+        for (let i = 0; i < diceResults7.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal7 += diceResults7[i];
+            // Prepare the individual dice values display
+            if (i < diceResults7.length - 1) {
+                diceArray7 += (diceResults7[i] + ' + ')
+            } else if (i === diceResults7.length - 1) {
+                diceArray7 += (diceResults7[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray7);
+    console.log(diceTotal7);
+    if (additionalDice7.style.display === 'block') {
+        console.log(diceQuantity8.value + 'd' + diceSides8.value);
+
+        for (numberOfDice8; numberOfDice8 > 0; numberOfDice8--) {
+            let diceValue8 = Math.floor((Math.random() * diceSides8.value) + 1);
+            diceResults8.push(diceValue8);
+        }
+
+        console.log(diceResults8);
+
+        for (let i = 0; i < diceResults8.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal8 += diceResults8[i];
+            // Prepare the individual dice values display
+            if (i < diceResults8.length - 1) {
+                diceArray8 += (diceResults8[i] + ' + ')
+            } else if (i === diceResults8.length - 1) {
+                diceArray8 += (diceResults8[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray8);
+    console.log(diceTotal8);
+    if (additionalDice8.style.display === 'block') {
+        console.log(diceQuantity9.value + 'd' + diceSides9.value);
+
+        for (numberOfDice9; numberOfDice9 > 0; numberOfDice9--) {
+            let diceValue9 = Math.floor((Math.random() * diceSides9.value) + 1);
+            diceResults9.push(diceValue9);
+        }
+
+        console.log(diceResults9);
+
+        for (let i = 0; i < diceResults9.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal9 += diceResults9[i];
+            // Prepare the individual dice values display
+            if (i < diceResults9.length - 1) {
+                diceArray9 += (diceResults9[i] + ' + ')
+            } else if (i === diceResults9.length - 1) {
+                diceArray9 += (diceResults9[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray9);
+    console.log(diceTotal9);
+    if (additionalDice9.style.display === 'block') {
+        console.log(diceQuantity10.value + 'd' + diceSides10.value);
+
+        for (numberOfDice10; numberOfDice10 > 0; numberOfDice10--) {
+            let diceValue10 = Math.floor((Math.random() * diceSides10.value) + 1);
+            diceResults10.push(diceValue10);
+        }
+
+        console.log(diceResults10);
+
+        for (let i = 0; i < diceResults10.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal10 += diceResults10[i];
+            // Prepare the individual dice values display
+            if (i < diceResults10.length - 1) {
+                diceArray10 += (diceResults10[i] + ' + ')
+            } else if (i === diceResults10.length - 1) {
+                diceArray10 += (diceResults10[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray10);
+    console.log(diceTotal10);
+    if (additionalDice10.style.display === 'block') {
+        console.log(diceQuantity11.value + 'd' + diceSides11.value);
+
+        for (numberOfDice11; numberOfDice11 > 0; numberOfDice11--) {
+            let diceValue11 = Math.floor((Math.random() * diceSides11.value) + 1);
+            diceResults11.push(diceValue11);
+        }
+
+        console.log(diceResults11);
+
+        for (let i = 0; i < diceResults11.length; i++) {
+            // Add up the value of the dice rolls
+            diceTotal11 += diceResults11[i];
+            // Prepare the individual dice values display
+            if (i < diceResults10.length - 1) {
+                diceArray11 += (diceResults11[i] + ' + ')
+            } else if (i === diceResults11.length - 1) {
+                diceArray11 += (diceResults11[i] + ' ');
+            }
+        }
+    }
+    console.log(diceArray11);
+    console.log(diceTotal11);
 
     // Add any modifiers
     if (modifier1.style.display === 'block') {
         if (modP1.checked) {
             console.log('+ ' + mod1.value);
-            withMods = diceTotal + Number(mod1.value);
+            modTotal += Number(mod1.value);
         } else if (modM1.checked) {
             console.log('- ' + mod1.value);
-            withMods = diceTotal - mod1.value;
+            modTotal -= mod1.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     } else {
         console.log('No modifiers...');
+        modifiersPresent = false
     }
     if (modifier2.style.display === 'block') {
         if (modP2.checked) {
             console.log('+ ' + mod2.value);
-            withMods += Number(mod2.value);
+            modTotal += Number(mod2.value);
         } else if (modM2.checked) {
             console.log('- ' + mod2.value);
-            withMods -= mod2.value;
+            modTotal -= mod2.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
@@ -318,10 +522,10 @@ function rollingDice(event) {
     if (modifier3.style.display === 'block') {
         if (modP3.checked) {
             console.log('+ ' + mod3.value);
-            withMods += Number(mod3.value);
+            modTotal += Number(mod3.value);
         } else if (modM3.checked) {
             console.log('- ' + mod3.value);
-            withMods -= mod3.value;
+            modTotal -= mod3.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
@@ -329,10 +533,10 @@ function rollingDice(event) {
     if (modifier4.style.display === 'block') {
         if (modP4.checked) {
             console.log('+ ' + mod4.value);
-            withMods += Number(mod4.value);
+            modTotal += Number(mod4.value);
         } else if (modM4.checked) {
             console.log('- ' + mod4.value);
-            withMods -= mod4.value;
+            modTotal -= mod4.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
@@ -340,10 +544,10 @@ function rollingDice(event) {
     if (modifier5.style.display === 'block') {
         if (modP5.checked) {
             console.log('+ ' + mod5.value);
-            withMods += Number(mod5.value);
+            modTotal += Number(mod5.value);
         } else if (modM5.checked) {
             console.log('- ' + mod5.value);
-            withMods -= mod5.value;
+            modTotal -= mod5.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
@@ -351,10 +555,10 @@ function rollingDice(event) {
     if (modifier6.style.display === 'block') {
         if (modP6.checked) {
             console.log('+ ' + mod6.value);
-            withMods += Number(mod6.value);
+            modTotal += Number(mod6.value);
         } else if (modM6.checked) {
             console.log('- ' + mod6.value);
-            withMods -= mod6.value;
+            modTotal -= mod6.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
@@ -362,10 +566,10 @@ function rollingDice(event) {
     if (modifier7.style.display === 'block') {
         if (modP7.checked) {
             console.log('+ ' + mod7.value);
-            withMods += Number(mod7.value);
+            modTotal += Number(mod7.value);
         } else if (modM7.checked) {
             console.log('- ' + mod7.value);
-            withMods -= mod7.value;
+            modTotal -= mod7.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
@@ -373,10 +577,10 @@ function rollingDice(event) {
     if (modifier8.style.display === 'block') {
         if (modP8.checked) {
             console.log('+ ' + mod8.value);
-            withMods += Number(mod8.value);
+            modTotal += Number(mod8.value);
         } else if (modM8.checked) {
             console.log('- ' + mod8.value);
-            withMods -= mod8.value;
+            modTotal -= mod8.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
@@ -384,10 +588,10 @@ function rollingDice(event) {
     if (modifier9.style.display === 'block') {
         if (modP9.checked) {
             console.log('+ ' + mod9.value);
-            withMods += Number(mod9.value);
+            modTotal += Number(mod9.value);
         } else if (modM9.checked) {
             console.log('- ' + mod9.value);
-            withMods -= mod9.value;
+            modTotal -= mod9.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
@@ -395,23 +599,23 @@ function rollingDice(event) {
     if (modifier10.style.display === 'block') {
         if (modP10.checked) {
             console.log('+ ' + mod10.value);
-            withMods += Number(mod10.value);
+            modTotal += Number(mod10.value);
         } else if (modM10.checked) {
             console.log('- ' + mod10.value);
-            withMods -= mod10.value;
+            modTotal -= mod10.value;
         } else {
             console.log('You must select either "+" or "-" for modifiers.');
         }
     }
 
-    console.log (withMods);
+    if (modifiersPresent) {
+        if (modTotal >= 0) {
+            console.log('+' + modTotal);
+        } else {
+            console.log(modTotal);
+        }
+    }
 
-    console.log(diceArray);
-    console.log(diceTotal);
-    console.log(diceArray2);
-    console.log(diceTotal2);
-
-    // console.log(diceQuantity.value);
     if (diceQuantity.value == 1) {
         resultDisplay.textContent = diceTotal;
     } else if (diceQuantity.value > 1) {
