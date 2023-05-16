@@ -105,7 +105,6 @@ modifier9.style.display = "none";
 modifier10.style.display = "none";
 nextRoll.style.display = "none";
 
-
 // This is what happens when you click on 'Add Another Dice Type'
 function addingDice(event) {
     event.preventDefault();
@@ -235,16 +234,13 @@ function rollingDice(event) {
     let diceArray11 = [''];
     let modTotal = 0;
     let modifiersPresent = true;
-
-    console.log(diceQuantity.value + 'd' + diceSides.value);
+    let fullResults = [];
 
     // Generate a random number (between 1 and the number of sides of the dice) for each dice rolled
     for (numberOfDice; numberOfDice > 0; numberOfDice--) {
         let diceValue = Math.floor((Math.random() * diceSides.value) + 1);
         diceResults.push(diceValue);
     }
-
-    console.log(diceResults);
 
     // Add up the dice rolls
     for (let i = 0; i < diceResults.length; i++) {
@@ -258,19 +254,20 @@ function rollingDice(event) {
         }
     }
 
-    console.log(diceArray);
-    console.log(diceTotal);
+    if (diceQuantity.value == 1) {
+        fullResults.push(diceQuantity.value + 'd' + diceSides.value + ': ' + diceTotal);
+    } else if (diceQuantity.value > 1) {
+        fullResults.push(diceQuantity.value + 'd' + diceSides.value + ': ' + diceArray + '= ' + diceTotal);
+    };
+
+    let totalDiceTally = diceTotal;
 
     // Additional dice types:
     if (additionalDice1.style.display === 'block') {
-        console.log(diceQuantity2.value + 'd' + diceSides2.value);
-
         for (numberOfDice2; numberOfDice2 > 0; numberOfDice2--) {
             let diceValue2 = Math.floor((Math.random() * diceSides2.value) + 1);
             diceResults2.push(diceValue2);
         }
-
-        console.log(diceResults2);
 
         for (let i = 0; i < diceResults2.length; i++) {
             // Add up the value of the dice rolls
@@ -282,18 +279,20 @@ function rollingDice(event) {
                 diceArray2 += (diceResults2[i] + ' ');
             }
         }
-    }
-    console.log(diceArray2);
-    console.log(diceTotal2);
-    if (additionalDice2.style.display === 'block') {
-        console.log(diceQuantity3.value + 'd' + diceSides3.value);
 
+        if (diceQuantity2.value == 1) {
+            fullResults.push(diceQuantity2.value + 'd' + diceSides2.value + ': ' + diceTotal2);
+        } else if (diceQuantity2.value > 1) {
+            fullResults.push(diceQuantity2.value + 'd' + diceSides2.value + ': ' + diceArray2 + '= ' + diceTotal2);
+        };
+
+        totalDiceTally += diceTotal2;
+    }
+    if (additionalDice2.style.display === 'block') {
         for (numberOfDice3; numberOfDice3 > 0; numberOfDice3--) {
             let diceValue3 = Math.floor((Math.random() * diceSides3.value) + 1);
             diceResults3.push(diceValue3);
         }
-
-        console.log(diceResults3);
 
         for (let i = 0; i < diceResults3.length; i++) {
             // Add up the value of the dice rolls
@@ -305,18 +304,20 @@ function rollingDice(event) {
                 diceArray3 += (diceResults3[i] + ' ');
             }
         }
-    }
-    console.log(diceArray3);
-    console.log(diceTotal3);
-    if (additionalDice3.style.display === 'block') {
-        console.log(diceQuantity4.value + 'd' + diceSides4.value);
 
+        if (diceQuantity3.value == 1) {
+            fullResults.push(diceQuantity3.value + 'd' + diceSides3.value + ': ' + diceTotal3);
+        } else if (diceQuantity3.value > 1) {
+            fullResults.push(diceQuantity3.value + 'd' + diceSides3.value + ': ' + diceArray3 + '= ' + diceTotal3);
+        };
+
+        totalDiceTally += diceTotal3;
+    }
+    if (additionalDice3.style.display === 'block') {
         for (numberOfDice4; numberOfDice4 > 0; numberOfDice4--) {
             let diceValue4 = Math.floor((Math.random() * diceSides4.value) + 1);
             diceResults4.push(diceValue4);
         }
-
-        console.log(diceResults4);
 
         for (let i = 0; i < diceResults4.length; i++) {
             // Add up the value of the dice rolls
@@ -328,18 +329,19 @@ function rollingDice(event) {
                 diceArray4 += (diceResults4[i] + ' ');
             }
         }
-    }
-    console.log(diceArray4);
-    console.log(diceTotal4);
-    if (additionalDice4.style.display === 'block') {
-        console.log(diceQuantity5.value + 'd' + diceSides5.value);
 
+        if (diceQuantity4.value == 1) {
+            fullResults.push(diceQuantity4.value + 'd' + diceSides4.value + ': ' + diceTotal4);
+        } else if (diceQuantity4.value > 1) {
+            fullResults.push(diceQuantity4.value + 'd' + diceSides4.value + ': ' + diceArray4 + '= ' + diceTotal4);
+        };
+        totalDiceTally += diceTotal4;
+    }
+    if (additionalDice4.style.display === 'block') {
         for (numberOfDice5; numberOfDice5 > 0; numberOfDice5--) {
             let diceValue5 = Math.floor((Math.random() * diceSides5.value) + 1);
             diceResults5.push(diceValue5);
         }
-
-        console.log(diceResults5);
 
         for (let i = 0; i < diceResults5.length; i++) {
             // Add up the value of the dice rolls
@@ -351,18 +353,20 @@ function rollingDice(event) {
                 diceArray5 += (diceResults5[i] + ' ');
             }
         }
-    }
-    console.log(diceArray5);
-    console.log(diceTotal5);
-    if (additionalDice5.style.display === 'block') {
-        console.log(diceQuantity6.value + 'd' + diceSides6.value);
 
+        if (diceQuantity5.value == 1) {
+            fullResults.push(diceQuantity5.value + 'd' + diceSides5.value + ': ' + diceTotal5);
+        } else if (diceQuantity5.value > 1) {
+            fullResults.push(diceQuantity5.value + 'd' + diceSides5.value + ': ' + diceArray5 + '= ' + diceTotal5);
+        };
+
+        totalDiceTally += diceTotal5;
+    }
+    if (additionalDice5.style.display === 'block') {
         for (numberOfDice6; numberOfDice6 > 0; numberOfDice6--) {
             let diceValue6 = Math.floor((Math.random() * diceSides6.value) + 1);
             diceResults6.push(diceValue6);
         }
-
-        console.log(diceResults6);
 
         for (let i = 0; i < diceResults6.length; i++) {
             // Add up the value of the dice rolls
@@ -374,18 +378,20 @@ function rollingDice(event) {
                 diceArray6 += (diceResults6[i] + ' ');
             }
         }
-    }
-    console.log(diceArray6);
-    console.log(diceTotal6);
-    if (additionalDice6.style.display === 'block') {
-        console.log(diceQuantity7.value + 'd' + diceSides7.value);
 
+        if (diceQuantity6.value == 1) {
+            fullResults.push(diceQuantity6.value + 'd' + diceSides6.value + ': ' + diceTotal6);
+        } else if (diceQuantity6.value > 1) {
+            fullResults.push(diceQuantity6.value + 'd' + diceSides6.value + ': ' + diceArray6 + '= ' + diceTotal6);
+        };
+
+        totalDiceTally += diceTotal6;
+    }
+    if (additionalDice6.style.display === 'block') {
         for (numberOfDice7; numberOfDice7 > 0; numberOfDice7--) {
             let diceValue7 = Math.floor((Math.random() * diceSides7.value) + 1);
             diceResults7.push(diceValue7);
         }
-
-        console.log(diceResults7);
 
         for (let i = 0; i < diceResults7.length; i++) {
             // Add up the value of the dice rolls
@@ -397,18 +403,20 @@ function rollingDice(event) {
                 diceArray7 += (diceResults7[i] + ' ');
             }
         }
-    }
-    console.log(diceArray7);
-    console.log(diceTotal7);
-    if (additionalDice7.style.display === 'block') {
-        console.log(diceQuantity8.value + 'd' + diceSides8.value);
 
+        if (diceQuantity7.value == 1) {
+            fullResults.push(diceQuantity7.value + 'd' + diceSides7.value + ': ' + diceTotal7);
+        } else if (diceQuantity7.value > 1) {
+            fullResults.push(diceQuantity7.value + 'd' + diceSides7.value + ': ' + diceArray7 + '= ' + diceTotal7);
+        };
+
+        totalDiceTally += diceTotal7;
+    }
+    if (additionalDice7.style.display === 'block') {
         for (numberOfDice8; numberOfDice8 > 0; numberOfDice8--) {
             let diceValue8 = Math.floor((Math.random() * diceSides8.value) + 1);
             diceResults8.push(diceValue8);
         }
-
-        console.log(diceResults8);
 
         for (let i = 0; i < diceResults8.length; i++) {
             // Add up the value of the dice rolls
@@ -420,18 +428,20 @@ function rollingDice(event) {
                 diceArray8 += (diceResults8[i] + ' ');
             }
         }
-    }
-    console.log(diceArray8);
-    console.log(diceTotal8);
-    if (additionalDice8.style.display === 'block') {
-        console.log(diceQuantity9.value + 'd' + diceSides9.value);
 
+        if (diceQuantity8.value == 1) {
+            fullResults.push(diceQuantity8.value + 'd' + diceSides8.value + ': ' + diceTotal8);
+        } else if (diceQuantity8.value > 1) {
+            fullResults.push(diceQuantity8.value + 'd' + diceSides8.value + ': ' + diceArray8 + '= ' + diceTotal8);
+        };
+
+        totalDiceTally += diceTotal8;
+    }
+    if (additionalDice8.style.display === 'block') {
         for (numberOfDice9; numberOfDice9 > 0; numberOfDice9--) {
             let diceValue9 = Math.floor((Math.random() * diceSides9.value) + 1);
             diceResults9.push(diceValue9);
         }
-
-        console.log(diceResults9);
 
         for (let i = 0; i < diceResults9.length; i++) {
             // Add up the value of the dice rolls
@@ -443,18 +453,20 @@ function rollingDice(event) {
                 diceArray9 += (diceResults9[i] + ' ');
             }
         }
-    }
-    console.log(diceArray9);
-    console.log(diceTotal9);
-    if (additionalDice9.style.display === 'block') {
-        console.log(diceQuantity10.value + 'd' + diceSides10.value);
 
+        if (diceQuantity9.value == 1) {
+            fullResults.push(diceQuantity9.value + 'd' + diceSides9.value + ': ' + diceTotal9);
+        } else if (diceQuantity9.value > 1) {
+            fullResults.push(diceQuantity9.value + 'd' + diceSides9.value + ': ' + diceArray9 + '= ' + diceTotal9);
+        };
+
+        totalDiceTally += diceTotal9;
+    }
+    if (additionalDice9.style.display === 'block') {
         for (numberOfDice10; numberOfDice10 > 0; numberOfDice10--) {
             let diceValue10 = Math.floor((Math.random() * diceSides10.value) + 1);
             diceResults10.push(diceValue10);
         }
-
-        console.log(diceResults10);
 
         for (let i = 0; i < diceResults10.length; i++) {
             // Add up the value of the dice rolls
@@ -466,32 +478,40 @@ function rollingDice(event) {
                 diceArray10 += (diceResults10[i] + ' ');
             }
         }
-    }
-    console.log(diceArray10);
-    console.log(diceTotal10);
-    if (additionalDice10.style.display === 'block') {
-        console.log(diceQuantity11.value + 'd' + diceSides11.value);
 
+        if (diceQuantity10.value == 1) {
+            fullResults.push(diceQuantity10.value + 'd' + diceSides10.value + ': ' + diceTotal10);
+        } else if (diceQuantity10.value > 1) {
+            fullResults.push(diceQuantity10.value + 'd' + diceSides10.value + ': ' + diceArray10 + '= ' + diceTotal10);
+        };
+
+        totalDiceTally += diceTotal10;
+    }
+    if (additionalDice10.style.display === 'block') {
         for (numberOfDice11; numberOfDice11 > 0; numberOfDice11--) {
             let diceValue11 = Math.floor((Math.random() * diceSides11.value) + 1);
             diceResults11.push(diceValue11);
         }
 
-        console.log(diceResults11);
-
         for (let i = 0; i < diceResults11.length; i++) {
             // Add up the value of the dice rolls
             diceTotal11 += diceResults11[i];
             // Prepare the individual dice values display
-            if (i < diceResults10.length - 1) {
+            if (i < diceResults11.length - 1) {
                 diceArray11 += (diceResults11[i] + ' + ')
             } else if (i === diceResults11.length - 1) {
                 diceArray11 += (diceResults11[i] + ' ');
             }
         }
+
+        if (diceQuantity11.value == 1) {
+            fullResults.push(diceQuantity11.value + 'd' + diceSides11.value + ': ' + diceTotal11);
+        } else if (diceQuantity11.value > 1) {
+            fullResults.push(diceQuantity11.value + 'd' + diceSides11.value + ': ' + diceArray11 + '= ' + diceTotal11);
+        };
+
+        totalDiceTally += diceTotal11;
     }
-    console.log(diceArray11);
-    console.log(diceTotal11);
 
     // Add any modifiers
     if (modifier1.style.display === 'block') {
@@ -608,6 +628,9 @@ function rollingDice(event) {
         }
     }
 
+    console.log(fullResults);
+    console.log(totalDiceTally);
+
     if (modifiersPresent) {
         if (modTotal >= 0) {
             console.log('+' + modTotal);
@@ -616,12 +639,12 @@ function rollingDice(event) {
         }
     }
 
-    if (diceQuantity.value == 1) {
-        resultDisplay.textContent = diceTotal;
-    } else if (diceQuantity.value > 1) {
-        resultDisplay.textContent = diceArray + ' = ' + diceTotal;
-    }
-    
+    const finalTally = totalDiceTally + modTotal;
+
+    console.log(finalTally);
+
+    resultDisplay.textContent = fullResults;
+        
     nextRoll.style.display = "block";
     rollDice.style.display = "none";
 };
