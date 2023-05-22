@@ -16,10 +16,14 @@
         <main>
             <div>
                 <form id="main-form">
-                    <label for="quantity">Number of Dice:</label>
-                    <input type="text" id="quantity" name="quantity"><br>
-                    <label for="sides">Number of Sides:</label>
-                    <input type="text" id="sides" name="sides"><br>
+                    <div class="mb-3 col-10 mx-auto">
+                        <label for="quantity" class="form-label">Number of Dice:</label>
+                        <input type="text" id="quantity" name="quantity" class="form-control">
+                    </div>
+                    <div class="mb-3 col-10 mx-auto">
+                        <label for="sides" class="form-label">Number of Sides:</label>
+                        <input type="text" id="sides" name="sides" class="form-control">
+                    </div>
                     <div id="additional-dice1">
                         <label for="quantity2">Number of Dice:</label>
                         <input type="text" id="quantity2" name="quantity2"><br>
@@ -160,9 +164,13 @@
                         <label for="modifier10-">-</label>
                         <input type="text" id="modifier10" name="modifier10">
                     </div>
-                    <input id="add-dice" type="button" value="Add Another Dice Type">
-                    <input id="add-modifier" type="button" value="Add a Modifier"><br><br>
-                    <input id="roll" type="submit" value="Roll">
+                    <div id="add-ons" class="mb-3 d-flex justify-content-evenly">
+                        <input id="add-dice" type="button" value="Add Another Dice Type" class="btn">
+                        <input id="add-modifier" type="button" value="Add a Modifier" class="btn">
+                    </div>
+                    <div id="roll-dice" class="d-grid gap-2 col-6 mx-auto">
+                        <input id="roll" type="submit" value="Roll" class="btn btn-lg">
+                    </div>
                     <div id="next-roll">
                         <input id="re-roll" type="button" value="Roll Same Dice">
                         <input id="new-roll" type="button" value="Clear Dice">
@@ -172,6 +180,12 @@
 
             <div>
                 <ul id="results"></ul>
+                    <li>temporary list for styling</li>
+                    <br>
+                    <li>1d20: 20</li>
+                    <li>1d4: 3</li>
+                    <li>Modifiers: +1 +2 = +3</li>
+                    <li>Total: 26</li>
             </div>
         </main>
 
