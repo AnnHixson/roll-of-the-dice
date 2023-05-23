@@ -105,6 +105,11 @@ modifier9.style.display = "none";
 modifier10.style.display = "none";
 nextRoll.style.display = "none";
 
+
+// rollDice.style.display = "none";
+
+
+
 // This is what happens when you click on 'Add Another Dice Type'
 function addingDice(event) {
     event.preventDefault();
