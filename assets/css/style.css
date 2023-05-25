@@ -1,33 +1,23 @@
-/* body {
-    display: flex;
-    justify-content: center;
-
+body {
     background-color: rgb(50, 54, 94);
     color: antiquewhite;
 }
 
-#add-ons {
-    display: flex;
-    justify-content: space-around;
+.custom-button-mod {
+    background-color: antiquewhite;
+    font-weight: bold;
+    border: rgb(218, 98, 98) solid;
+}
+.custom-button-add {
+    background-color: antiquewhite;
 }
 
-#roll-dice {
-    display: flex;
-    justify-content: center;
+.custom-button-roll {
+    background-color: antiquewhite;
 }
-
-#next-roll {
-    display: flex;
-    justify-content:space-around; 
-} */
-
-/* ul {
-    display: flex;
-    justify-content: center;
-
-} */
 
 li {
+    font-size: x-large;
     list-style-type: none;
     display: flex;
     justify-content: center;

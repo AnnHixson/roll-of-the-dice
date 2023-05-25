@@ -105,11 +105,6 @@ modifier9.style.display = "none";
 modifier10.style.display = "none";
 nextRoll.style.display = "none";
 
-
-// rollDice.style.display = "none";
-
-
-
 // This is what happens when you click on 'Add Another Dice Type'
 function addingDice(event) {
     event.preventDefault();
@@ -667,8 +662,12 @@ function rollingDice(event) {
         resultDisplay.appendChild(resultListEl);
     }
 
-    const resultSpacer = document.createElement("br");
-    resultDisplay.appendChild(resultSpacer);
+    // const resultSpacer = document.createElement("br");
+    // resultDisplay.appendChild(resultSpacer);
+
+    const resultLine = document.createElement("hr");
+    resultLine.className = "mx-auto w-75";
+    resultDisplay.appendChild(resultLine);
         
     nextRoll.style.display = "block";
     rollDice.style.display = "none";
