@@ -1,19 +1,42 @@
 body {
-    background-color: rgb(50, 54, 94);
-    color: antiquewhite;
+    background-color: rgba(15, 13, 37, 0.87);
+    color: rgba(145, 238, 250, 0.904);
 }
 
 .custom-button-mod {
-    background-color: antiquewhite;
+    background-color: rgba(15, 13, 37, 0.87);
     font-weight: bold;
-    border: rgb(218, 98, 98) solid;
-}
-.custom-button-add {
-    background-color: antiquewhite;
+    border: rgba(145, 238, 250, 0.904) solid;
+    color: rgba(145, 238, 250, 0.904);
 }
 
-.custom-button-roll {
-    background-color: antiquewhite;
+.custom-button-mod:hover {
+    background-color: rgba(145, 238, 250, 0.904) !important;
+    color: rgba(15, 13, 37, 0.87) !important;
+    border: rgba(15, 13, 37, 0.87) solid !important;
+}
+
+.custom-button-add {
+    background-color: rgba(145, 238, 250, 0.904);
+    border: rgba(15, 13, 37, 0.87) solid;
+}
+
+.custom-button-add:hover {
+    background-color: rgba(15, 13, 37, 0.87);
+    color: rgba(145, 238, 250, 0.904);
+    border: rgba(145, 238, 250, 0.904) solid;
+}
+
+.custom-button-roll:hover  {
+    background-color: rgba(145, 238, 250, 0.904);
+    color: rgba(15, 13, 37, 0.87);
+    border: rgba(15, 13, 37, 0.87) solid;
+}
+
+.custom-button-roll{
+    background-color: rgba(15, 13, 37, 0.87);
+    color: rgba(145, 238, 250, 0.904);
+    border: rgba(145, 238, 250, 0.904) solid;
 }
 
 li {

@@ -662,9 +662,6 @@ function rollingDice(event) {
         resultDisplay.appendChild(resultListEl);
     }
 
-    // const resultSpacer = document.createElement("br");
-    // resultDisplay.appendChild(resultSpacer);
-
     const resultLine = document.createElement("hr");
     resultLine.className = "mx-auto w-75";
     resultDisplay.appendChild(resultLine);
